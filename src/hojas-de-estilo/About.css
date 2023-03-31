@@ -1,0 +1,132 @@
+.contenedor-about {
+  height: 87vh;
+  width: 95vw;
+  background-image: url(../imagenes/aboutme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: 900;
+  align-items: center;
+  position: absolute;
+  user-select: none;
+}
+
+@keyframes subir {
+  0% { opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+
+
+.atras1 {
+  animation:
+    subir 1.5s linear 0s;
+  transition: z-index;
+  transition-duration: 0.5s;
+  transition-delay: 1.3s;
+  z-index: 600;
+}
+
+.contenedor-presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 35%;
+  padding: 1.5vw 2vw;
+  background-color: rgba(231, 175, 193, 0.41);
+  margin: 40px 20px 20px;
+}
+
+.Sobremi {
+  color: #863D82;
+  font-family: 'Caveat', cursive;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.presentacion{
+  color: #fff;
+  font-size: 1vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 0;
+  text-align: justify;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.despedida{
+  color: #fff;
+  font-size: 1vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.contenedor-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 35%;
+  padding: 1.5vw 2vw;
+  background-color: rgba(231, 175, 193, 0.41);
+  margin: 20px 20px 40px;
+  
+}
+
+.skills {
+  color: #863D82;
+  font-family: 'Caveat', cursive;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.iconos-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-trabajos {
+  height: 15%;
+}
+.contenedor-curriculum{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 15%;
+  width: 100%;
+}
+
+.texto-curriculum {
+  color: #fff;
+  font-family: 'Caveat', cursive;
+  font-size: 1.2vw;
+  padding-bottom: 2vw;
+}
+
+.cv {
+  display: flex;
+  color: #fff;
+  font-size: 3vw;
+  transition: transform .3s;
+  cursor: pointer;
+  padding: 0 2vw 2vw 1vw;
+}
+
+
+/*ANIMACION ICONOS*/
+.cv:hover {
+  transform: scale(1.1);
+}
+
+/* ANIMACION FLOTANTE*/
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 25px); }
+  100%   { transform: translate(0, -0px); }   
+}
+

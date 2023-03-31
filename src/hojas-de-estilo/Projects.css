@@ -1,0 +1,78 @@
+.contenedor-projects {
+  height: 87vh;
+  width: 95vw;
+  background-image: url(../imagenes/projects.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: 800;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  user-select: none;
+  }
+
+  @keyframes subir {
+    0% { opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+  }
+
+.atras2 {
+  animation:
+    subir 1.5s linear 0s;
+  transition: z-index;
+  transition-duration: 0.5s;
+  transition-delay: 1.3s;
+  z-index: 500;
+}
+
+
+
+
+.caja-projects {
+  background-color: rgba(190, 175, 231, 0.41);
+  height: fit-content;
+  width: 80vw;
+  margin: 2vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contenedor-projects-titulo{
+  width: 80%;
+  margin: 3vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.mis-proyectos{
+  color: #4E56AD;
+  font-family: 'Caveat', cursive;
+  font-size: 2.5vw;
+  font-weight: bold ;
+  margin-bottom: 2vw;
+}
+
+.contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyectos-info {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1vw;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.btn-projects {
+  margin-bottom: 2vw;
+}
