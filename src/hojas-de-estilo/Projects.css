@@ -13,24 +13,6 @@
   user-select: none;
   }
 
-  @keyframes subir {
-    0% { opacity: 1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 0;}
-  }
-
-.atras2 {
-  animation:
-    subir 1.5s linear 0s;
-  transition: z-index;
-  transition-duration: 0.5s;
-  transition-delay: 1.3s;
-  z-index: 500;
-}
-
-
-
-
 .caja-projects {
   background-color: rgba(190, 175, 231, 0.41);
   height: fit-content;
@@ -41,7 +23,7 @@
   flex-direction: column;
 }
 .contenedor-projects-titulo{
-  width: 80%;
+  width: fit-content;
   margin: 3vw;
   height: fit-content;
   display: flex;

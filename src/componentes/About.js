@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
 import '../hojas-de-estilo/About.css';
+import '../hojas-de-estilo/general.css';
 import Boton from "./Boton";
 import { AiFillContainer } from "react-icons/ai";
 import Tecno from './Tecno';
 import CV from '../archivos/CV.pdf';
 
-function About(){
-  const [click2,setClick2] = useState(false);
-
-  const clickBoton2 =()=> {
-    if(click2) {
-      setClick2(false);
-    }else {
-      setClick2(true);
-    }
-  }
+function About({ playAnimation, clickHandler, zindex }){
   
   return(
-    <div className= { click2 ? 'contenedor-about atras1' :'contenedor-about'} >
+    <div className={playAnimation ? "contenedor-about atras" : "contenedor-about"}
+    style={{ zIndex: zindex }} >
       <div className='contenedor-presentacion'>
         <p className='Sobremi'>Sobre mi</p>
         <p className='presentacion'>
@@ -36,7 +29,7 @@ function About(){
           <Tecno texto='Node.js'/>
         </div>
       </div>
-      <Boton texto='Mis proyectos' className='boton-trabajos' onClick={clickBoton2}/>
+      <Boton texto='Mis proyectos' className='boton-trabajos' onClick={clickHandler}/>
       <div className='contenedor-curriculum'>
         <p className='texto-curriculum'> Descarga mi currículum aquí</p>
         <a className='cv' href={CV} target="_blank" rel="noopener noreferrer" download="CV.pdf"><AiFillContainer className='icono-curriculum' /></a>

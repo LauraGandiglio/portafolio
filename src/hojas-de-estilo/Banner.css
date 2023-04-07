@@ -13,21 +13,6 @@ position: absolute;
 z-index: 1000;
 }
 
-@keyframes subir {
-  0% { opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 0;}
-}
-
-.atras {
-  animation:
-    subir 1.5s linear 0s;
-  transition: z-index;
-  transition-duration: 0.5s;
-  transition-delay: 1.3s;
-  z-index: 700;
-}
-
 .contenedor-texto {
   padding: 10vh 10vw;
   max-width: max-content;

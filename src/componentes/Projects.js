@@ -1,23 +1,14 @@
 import React,{useState} from "react";
 import '../hojas-de-estilo/Projects.css';
+import '../hojas-de-estilo/general.css';
 import Trabajo from './Trabajo';
 import Boton from './Boton';
 
-function Proyects () {
+function Proyects ({ playAnimation, clickHandler, zindex }) {
 
-  const [click3,setClick3] = useState(false);
-
-  const clickBoton =()=> {
-    if(click3) {
-      setClick3(false);
-    }else {
-      setClick3(true);
-    }
-    setTimeout(()=> {window.location.reload()},1800);
-  }
-  
   return (
-	<div className={ click3 ? 'contenedor-projects atras2' :'contenedor-projects'}>
+	<div className={playAnimation? "contenedor-projects atras": "contenedor-projects"}
+  style={{ zIndex: zindex }}>
 		<div className='caja-projects'>
 			<div className='contenedor-projects-titulo'>
 				<p className='mis-proyectos'> Mis proyectos</p>
@@ -31,7 +22,7 @@ function Proyects () {
         <Trabajo texto = 'Barra movil' imagen = 'gris.jpg'/>
       </div>
 		</div>
-    <Boton texto = 'Inicio' onClick = {clickBoton} /> 
+    <Boton texto = 'Inicio' onClick = {clickHandler} /> 
 	</div>
 	);
 }

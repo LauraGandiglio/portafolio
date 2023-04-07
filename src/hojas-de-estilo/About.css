@@ -10,22 +10,7 @@
   align-items: center;
   position: absolute;
   user-select: none;
-}
-
-@keyframes subir {
-  0% { opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 0;}
-}
-
-
-.atras1 {
-  animation:
-    subir 1.5s linear 0s;
-  transition: z-index;
-  transition-duration: 0.5s;
-  transition-delay: 1.3s;
-  z-index: 600;
+  justify-content: center;
 }
 
 .contenedor-presentacion {
@@ -33,11 +18,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 35%;
-  padding: 1.5vw 2vw;
+  width: 87vw;
+  height: fit-content;
+  padding:1vw;
   background-color: rgba(231, 175, 193, 0.41);
-  margin: 40px 20px 20px;
+  margin: 1vw;
 }
 
 .Sobremi {
@@ -68,12 +53,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 35%;
-  padding: 1.5vw 2vw;
+  width: 87vw;
+  height: fit-content;
+  padding: 1vw;
   background-color: rgba(231, 175, 193, 0.41);
-  margin: 20px 20px 40px;
-  
+  margin: 1vw 2vw;
 }
 
 .skills {
@@ -90,14 +74,11 @@
   align-items: center;
 }
 
-.boton-trabajos {
-  height: 15%;
-}
 .contenedor-curriculum{
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  height: 15%;
+  height: 10%;
   width: 100%;
 }
 

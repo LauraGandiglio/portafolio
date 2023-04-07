@@ -17,6 +17,7 @@
   height: 75%;
   filter: grayscale(1);
   transition: filter 0.5s;
+  object-fit: cover;
 }
 
 .trabajo-nombre {
